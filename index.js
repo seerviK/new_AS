@@ -120,4 +120,4 @@ app.post("/updateRole/:userId", async (req, res) => {
 });
 
 const appPort = process.env.PORT || 8080;
-app.listen(appPort, () => console.log(Server start at http://localhost:${appPort}));
+app.listen(appPort, () => console.log(`Server started at http://localhost:${appPort}`));
