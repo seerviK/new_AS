@@ -119,7 +119,5 @@ app.post("/updateRole/:userId", async (req, res) => {
     }
 });
 
-const port = 8080;
-app.listen(port, () => {
-    console.log(`Server running on port: ${port}`);
-});
+const appPort = process.env.PORT || 8080;
+app.listen(appPort, () => console.log(Server start at http://localhost:${appPort}));
